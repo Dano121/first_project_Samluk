@@ -1,0 +1,19 @@
+[project]
+name = "first_project_Samluk"
+description = "Ingestia zamówień z zamrożonych plików CSV/JSON do PostgreSQL"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "psycopg2-binary>=2.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
